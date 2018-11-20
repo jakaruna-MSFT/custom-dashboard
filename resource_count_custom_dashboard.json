@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/ArmDataPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "title": "Resource Groups",
+                    "subtitle": "Count",
+                    "uri": "/subscriptions/<subscription id>/resourceGroups/?api-version=2018-06-01",
+                    "path": "value[length]",
+                    "size": "43px",
+                    "interval": 60,
+                    "version": 1
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "position": {
+              "x": 2,
+              "y": 0,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/ArmDataPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "title": "Virtual Machines",
+                    "subtitle": "Count",
+                    "uri": "/subscriptions/<subscription id>/resourceGroups/<resource group name>/providers/Microsoft.Compute/virtualMachines/?api-version=2018-06-01",
+                    "path": "value[length]",
+                    "size": "43px",
+                    "interval": 60,
+                    "version": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "Microsoft.Portal/dashboards",
+  "location": "westus2",
+  "tags": {
+    "hidden-title": "Resources Count"
+  },
+  "apiVersion": "2015-08-01-preview"
+}
