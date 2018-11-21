@@ -53,7 +53,32 @@
                 }
               }
             }
-          }
+          },
+          "2": {
+            "position": {
+              "x": 4,
+              "y": 0,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/ArmDataPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "title": "Disks",
+                    "subtitle": "Count",
+                    "uri": "/subscriptions/<subscription id>/providers/Microsoft.Compute/disks/?api-version=2018-06-01",
+                    "path": "value[length]",
+                    "size": "43px",
+                    "interval": 60,
+                    "version": 1
+                  }
+                }
+              }
+            }
+          }          
         }
       }
     }
